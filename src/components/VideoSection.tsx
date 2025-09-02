@@ -1,26 +1,17 @@
 import { Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import videoThumb from '@/assets/garden-video-thumb.jpg';
-
 const VideoSection = () => {
-  return (
-    <section className="py-20 bg-background">
+  return <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Video Thumbnail */}
           <div className="relative group cursor-pointer">
             <div className="relative overflow-hidden rounded-lg shadow-card">
-              <img 
-                src={videoThumb} 
-                alt="Profissional de jardinagem da LX Jardinagem trabalhando em jardim"
-                className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-500"
-                loading="lazy"
-              />
+              <img src={videoThumb} alt="Profissional de jardinagem da LX Jardinagem trabalhando em jardim" className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
               <div className="absolute inset-0 bg-primary/20 group-hover:bg-primary/10 transition-colors duration-300"></div>
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-20 h-20 bg-primary-foreground/90 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-hover">
-                  <Play className="w-8 h-8 text-primary ml-1" fill="currentColor" />
-                </div>
+                
               </div>
             </div>
           </div>
@@ -46,16 +37,12 @@ const VideoSection = () => {
               </p>
             </div>
 
-            <Button 
-              className="bg-gradient-service hover:bg-service-hover text-primary-foreground px-8 py-4 text-lg shadow-card"
-            >
+            <Button className="bg-gradient-service hover:bg-service-hover text-primary-foreground px-8 py-4 text-lg shadow-card">
               VER NOSSO TRABALHO
             </Button>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default VideoSection;
