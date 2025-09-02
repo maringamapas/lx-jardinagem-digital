@@ -1,17 +1,10 @@
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-bg.jpg';
-
 const Hero = () => {
-  return (
-    <section id="home" className="relative min-h-screen flex items-center bg-hero-bg overflow-hidden">
+  return <section id="home" className="relative min-h-screen flex items-center bg-hero-bg overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroImage} 
-          alt="Beautiful garden landscaping by LX Jardinagem" 
-          className="w-full h-full object-cover opacity-20"
-          loading="lazy"
-        />
+        <img src={heroImage} alt="Beautiful garden landscaping by LX Jardinagem" loading="lazy" className="w-full h-full object-cover opacity-20 " />
       </div>
 
       <div className="container mx-auto px-4 py-20 relative z-10">
@@ -34,17 +27,10 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
-                className="bg-gradient-service hover:bg-service-hover text-primary-foreground px-8 py-4 text-lg shadow-card"
-              >
+              <Button size="lg" className="bg-gradient-service hover:bg-service-hover text-primary-foreground px-8 py-4 text-lg shadow-card">
                 NOSSOS SERVIÇOS
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 text-lg"
-              >
+              <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 text-lg">
                 VER PORTFÓLIO
               </Button>
             </div>
@@ -79,8 +65,6 @@ const Hero = () => {
       {/* Decorative Elements */}
       <div className="absolute top-1/4 right-0 w-32 h-32 bg-gradient-accent opacity-10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/4 left-0 w-24 h-24 bg-gradient-service opacity-10 rounded-full blur-2xl"></div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
